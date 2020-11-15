@@ -413,12 +413,13 @@ header .side-nav .social-link {
     box-shadow: none;
 }
 
+/* 首页两按钮的鼠标悬浮效果 */
 .cover-btns a:hover {
     border: 1px solid #f44336;
     background-color: #f44336;
-    box-shadow: 0 14px 26px -12px rgba(233, 30, 99, 0.42),
+    box-shadow: 0 14px 26px -12px rgba(223, 59, 18, 0.671),
             0 4px 23px 0 rgba(0, 0, 0, 0.12),
-            0 8px 10px -5px rgba(233, 30, 99, 0.2);
+            0 8px 10px -5px rgba(243, 33, 33, 0.493);
 }
 
 .cover-btns a i {
@@ -578,9 +579,11 @@ header .go-back i {
     height: 40vh !important;
 }
 
+/* 背景遮罩变色 */
 .bg-cover:after {
-    -webkit-animation: rainbow 60s infinite;
-    animation: rainbow 60s infinite;
+    /* -webkit-animation: rainbow 60s infinite; */
+    /* animation: rainbow 60s infinite; */
+    background: linear-gradient(325deg, #083b6f, #316c67, #34a058, #00d73e)
 }
 
 .bg-cover:before,
@@ -1858,7 +1861,7 @@ thead {
 
 /*尾部样式*/
 footer {
-    padding-bottom: 1px;
+    padding-bottom: 20px;
 }
 
 footer .social-statis {
