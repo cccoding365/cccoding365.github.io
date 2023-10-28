@@ -20,10 +20,10 @@ hero:
           link: /about/
 
 features:
-    - title: ✨ Advanced technology
-      details: Keep track of the advanced development skills I learned.
-    - title: 🏹 Amazing share
-      details: Share a wealth of material resources and efficiency tools.
-    - title: 🚀 Excellent project
-      details: Show some wonderful open source projects.
+    - title: 
+      details: 
+    - title: 
+      details: 
+    - title: 
+      details: 
 ---
