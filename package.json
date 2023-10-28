@@ -1,0 +1,29 @@
+{
+  "name": "cccsspace",
+  "version": "1.0.0",
+  "description": "DoubledConG's vitepress website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cccoding365/cccoding365.github.io"
+  },
+  "keywords": [
+    "documents",
+    "notes",
+    "study"
+  ],
+  "author": "DoubledConG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cccoding365/cccoding365.github.io/issues"
+  },
+  "homepage": "https://github.com/cccoding365/cccoding365.github.io#readme",
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.22"
+  }
+}
