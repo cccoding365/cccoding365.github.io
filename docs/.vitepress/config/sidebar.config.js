@@ -1,5 +1,10 @@
 export default {
-	"/frontend/": [],
+	"/frontend/": [
+		{
+			text: 'Interview',
+			link: '/frontend/interview.md'
+		}
+	],
 	"/project/": [],
 	"/resource/": [
 		{
