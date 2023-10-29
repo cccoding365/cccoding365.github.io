@@ -17,4 +17,4 @@ Changing the world with code is hard, but doing something interesting is just fi
 ## ✨ 主要内容
 
 -   📌 高级的编程思想
--   🔗 丰富的开发资源
+-   🔗 优质的开发资源
