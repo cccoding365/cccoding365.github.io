@@ -7,7 +7,7 @@ pageClass: home
 hero:
     name: "CC's Space&lt;T&gt;"
     text: "Reading Studing \n& CCcoding365 . . ."
-    tagline: Changing the world with code is hard, but doing something meaningful is just fine.
+    tagline: Changing the world with code is hard, but doing something interesting is just fine.
     image:
         src: /cover.svg
         alt: ccspace
@@ -20,10 +20,10 @@ hero:
           link: /about/
 
 features:
-    - title: 
-      details: 
-    - title: 
-      details: 
-    - title: 
-      details: 
+    - title: Technical summary
+      details: Summarize the relevant techniques learned in programming
+    - title: Resource sharing
+      details: Share high-quality resources for development and daily use
+    - title: Project presentation
+      details: Display some excellent projects that have resulted from daily work and learning
 ---

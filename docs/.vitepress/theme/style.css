@@ -143,9 +143,3 @@
     linear-gradient(rgba(102, 102, 102, .05) 10%, rgba(0, 0, 0, 0) 10%);
   background-size: 10px 10px;
 }
-
-.VPLink.VPFeature {
-  cursor: pointer;
-  border: 3px solid #33333320;
-  transition: border .25s ease-in-out;
-}
