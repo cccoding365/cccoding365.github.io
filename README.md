@@ -3,7 +3,7 @@ CC's Space&lt;T&gt;
 </h1>
 
 <p align="center">
-Changing the world with code is hard, but doing something meaningful is just fine.
+Changing the world with code is hard, but doing something interesting is just fine.
 </p>
 
 <p align="center">
