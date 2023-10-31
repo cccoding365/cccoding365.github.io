@@ -16,6 +16,9 @@
 -   [**particles.js**](https://github.com/VincentGarreau/particles.js) - A lightweight JavaScript library for creating particles.
     ![GitHub Repo stars](https://img.shields.io/github/stars/VincentGarreau/particles.js)
 
+-   [**transition.css**](https://github.com/argyleink/transition.css) - Drop-in CSS transitions.
+    ![GitHub Repo stars](https://img.shields.io/github/stars/argyleink/transition.css)
+
 ## Utils
 
 -   [**axios**](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js.
