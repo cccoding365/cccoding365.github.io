@@ -18,6 +18,10 @@ export default {
 		{
 			text: 'Website',
 			link: '/resource/website.md'
+		},
+		{
+			text: 'Notebook',
+			link: '/resource/notebook.md'
 		}
 	]
 };
