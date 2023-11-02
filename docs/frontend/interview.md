@@ -42,7 +42,7 @@ IE 盒模型和 W3C 标准盒模型的区别：
 
 1. **Vue 双向数据绑定原理？**
 
-Vue 的双向数据绑定主要是通过 **数据劫持** 和 **发布订阅者模式** 实现 View 和 Model 的同步更新。
+**答：** Vue 双向数据绑定主要通过 **数据劫持** 和 **发布订阅者模式** 实现 View 和 Model 的同步更新。
 
 首先我们通过 `Object.defineProperty()` 方法来对 Model 数据各个属性添加访问器属性，以此来实现数据的劫持，因此当 Model 中的数据发生变化的时候，我们可以通过配置的 `setter` 和 `getter` 方法来实现对 View 层数据更新的通知。
 
@@ -56,3 +56,31 @@ Vue 的双向数据绑定主要是通过 **数据劫持** 和 **发布订阅者�
 如果遇到了绑定的文本节点，我们使用 Model 中对应的属性的值来替换这个文本。对于文本节点的更新，我们使用了 **发布订阅者模式** ，属性作为一个主题，我们为这个节点设置一个订阅者对象，将这个订阅者对象加入这个属性主题的订阅者列表中。当 Model 层数据发生改变的时候，Model 作为发布者向主题发出通知，主题收到通知再向它的所有订阅者推送，订阅者收到通知后更改自己的数据。
 
 ## React
+
+1. **什么是 JSX ？**
+
+**答：** JSX 是 ECMAScript 一个类似 XML 的语法扩展。基本上，它只是为 `React.createElement()` 函数提供语法糖，从而让在我们在 JavaScript 中，使用类 HTML 模板的语法，进行页面描述。
+
+在下面的示例中，`<h1>` 内的文本标签会作为 JavaScript 函数返回给渲染函数。
+
+```jsx
+class App extends React.Component {
+	render() {
+		return (
+			<div>
+				<h1>{"Welcome to React world!"}</h1>
+			</div>
+		);
+	}
+}
+```
+
+以上示例 render 方法中的 JSX 将会被转换为以下内容：
+
+```js
+React.createElement(
+	"div",
+	null,
+	React.createElement("h1", null, "Welcome to React world!"),
+);
+```
