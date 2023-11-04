@@ -234,3 +234,21 @@ Props 的主要目的是提供以下组件功能：
 ```js
 props.reactProp;
 ```
+
+3. **React 中为什么不能直接更新状态？**
+
+**答：** 如果你尝试直接改变状态，那么组件将不会重新渲染。
+
+```jsx
+// Wrong
+this.state.message = "Hello world";
+```
+
+正确方法应该是使用 `setState()` 方法。它调度组件状态对象的更新。当状态更改时，组件通将会重新渲染。
+
+```jsx
+// Correct
+this.setState({ message: "Hello World" });
+```
+
+> 注意： 你可以在 `constructor` 中或使用最新的 JavaScript 类属性声明语法直接设置状态对象。
