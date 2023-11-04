@@ -60,6 +60,8 @@ Here are some amazing websites that can always help you when you need them.
 
 -   [**excalidraw**](https://excalidraw.com/) - A whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them.
 
+-   [**ilovepdf**](https://www.ilovepdf.com/) - Every tool you need to use PDFs, at your fingertips.
+
 -   [**time.graphics**](https://time.graphics/) - Free online timeline maker.
 
 ## Tutorial
