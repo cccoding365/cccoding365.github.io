@@ -71,6 +71,30 @@ IE 盒模型和 W3C 标准盒模型的区别：
 
 > 引用数据类型在栈中存储了指针，该指针指向堆中该实体的起始地址。当解释器寻找引用值时，会首先检索其在栈中的地址，取得地址后从堆中获得实体。
 
+3. **内部属性 `[[Class]]` 是什么？**
+
+**答：** 所有 `typeof` 返回值为 `"object"` 的对象（如数组）都包含一个内部属性 `[[Class]]`（我们可以把它看作一个内部的分类，而非传统的面向对象意义上的类）。这个属性无法直接访问，一般通过 `Object.prototype.toString(..)` 来查看。例如：
+
+```js
+Object.prototype.toString.call([1, 2, 3]);
+// "[object Array]"
+
+Object.prototype.toString.call(/regex-literal/i);
+// "[object RegExp]"
+
+// 我们自己创建的类就不会有这份特殊待遇，因为 toString() 找不到 toStringTag 属性时只好返回默认的 Object 标签
+// 默认情况类的[[Class]]返回[object Object]
+class Class1 {}
+Object.prototype.toString.call(new Class1()); // "[object Object]"
+// 需要定制[[Class]]
+class Class2 {
+	get [Symbol.toStringTag]() {
+		return "Class2";
+	}
+}
+Object.prototype.toString.call(new Class2()); // "[object Class2]"
+```
+
 ## Vue
 
 1. **Vue 双向数据绑定原理？**
