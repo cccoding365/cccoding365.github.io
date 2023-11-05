@@ -86,6 +86,27 @@ IE 盒模型和 W3C 标准盒模型的区别：
 在代码顺序上，`::after` 生成的内容也比`::before` 生成的内容靠后。
 如果按堆栈视角，`::after` 生成的内容会在`::before` 生成的内容之上。
 
+4. **CSS 中哪些属性可以继承？**
+
+**答：**
+
+-   字体系列属性：font、font-family、font-weight、font-size、font-style、font-variant、font-stretch、font-size-adjust
+
+-   文本系列属性：text-indent、text-align、text-shadow、line-height、word-spacing、letter-spacing、
+    text-transform、direction、color
+
+-   表格布局属性：caption-side border-collapse empty-cells
+
+-   列表属性：list-style-type、list-style-image、list-style-position、list-style
+
+-   光标属性：cursor
+
+-   元素可见性：visibility
+
+-   还有一些不常用的：speak，page，设置嵌套引用的引号类型 quotes 等属性
+
+> 当一个属性不是继承属性时，可以使用 inherit 关键字指定一个属性应从父元素继承它的值，inherit 关键字用于显式地指定继承性，可用于任何继承性/非继承性属性。
+
 ## JavaScript
 
 1. **介绍 js 的基本数据类型。**
