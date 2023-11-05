@@ -306,3 +306,44 @@ this.setState({ message: "Hello World" });
 ```
 
 > 注意： 你可以在 `constructor` 中或使用最新的 JavaScript 类属性声明语法直接设置状态对象。
+
+4. **什么是受控组件与非受控组件？**
+
+**答：** 在随后的用户输入中，**能够控制表单中输入元素的组件被称为受控组件**，即每个状态更改都有一个相关联的处理程序。例如，我们使用下面的 handleChange 函数将输入框的值转换成大写：
+
+```jsx
+handleChange(event) {
+	this.setState({value: event.target.value.toUpperCase()})
+}
+```
+
+**非受控组件是在内部存储其自身状态的组件**，当需要时，可以使用 ref 查询 DOM 并查找其当前值。这有点像传统的 HTML。在下面的 UserProfile 组件中，我们通过 ref 引用 name 输入框：
+
+```jsx
+class UserProfile extends React.Component {
+	constructor(props) {
+		super(props);
+		this.handleSubmit = this.handleSubmit.bind(this);
+		this.input = React.createRef();
+	}
+
+	handleSubmit(event) {
+		alert("A name was submitted: " + this.input.current.value);
+		event.preventDefault();
+	}
+
+	render() {
+		return (
+			<form onSubmit={this.handleSubmit}>
+				<label>
+					{"Name:"}
+					<input type="text" ref={this.input} />
+				</label>
+				<input type="submit" value="Submit" />
+			</form>
+		);
+	}
+}
+```
+
+> 在大多数情况下，建议使用受控组件来实现表单。
