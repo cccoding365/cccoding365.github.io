@@ -58,9 +58,15 @@ Here are some amazing websites that can always help you when you need them.
 
 ## Productivity
 
+-   [**favicon.io**](https://favicon.io/) - Quickly generate your favicon from text, image, or choose from hundreds of emojis.
+
 -   [**excalidraw**](https://excalidraw.com/) - A whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them.
 
+-   [**Icon Maker**](https://icon.ray.so/) - Create beautiful icons for your next project, app, or Raycast extension.
+
 -   [**ilovepdf**](https://www.ilovepdf.com/) - Every tool you need to use PDFs, at your fingertips.
+
+-   [**qrbtf**](https://qrbtf.com/) - AI QR Code Generator.
 
 -   [**time.graphics**](https://time.graphics/) - Free online timeline maker.
 
