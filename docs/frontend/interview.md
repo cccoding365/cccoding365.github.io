@@ -259,6 +259,18 @@ ES5 规范还定义了抽象操作 ToBoolean，列举了布尔强制类型转换
 
 -   从使用场景上说，computed 适用一个数据被多个数据影响，而 watch 适用一个数据影响多个数据。
 
+5. **介绍 vue-router 中的导航钩子函数。**
+
+**答：**
+
+-   全局的钩子函数 `beforeEach` 和 `afterEach`
+
+beforeEach 有三个参数，to 代表要进入的路由对象，from 代表离开的路由对象。next 是一个必须要执行的函数，如果不传参数，那就执行下一个钩子函数，如果传入 false，则终止跳转，如果传入一个路径，则导航到对应的路由，如果传入 error ，则导航终止，error 传入错误的监听函数。
+
+-   单个路由独享的钩子函数 `beforeEnter`，它是在路由配置上直接进行定义的。
+
+-   组件内的导航钩子主要有这三种：`beforeRouteEnter`、`beforeRouteUpdate`、`beforeRouteLeave`。它们是直接在路由组件内部直接进行定义的。
+
 ## React
 
 1. **什么是 JSX ？**
