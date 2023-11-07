@@ -501,3 +501,18 @@ class UserProfile extends React.Component {
 5. **React 中的提升状态是什么？**
 
 **答：** 当多个组件需要共享相同的更改数据时，建议将共享状态提升到最接近的共同祖先。这意味着，如果两个子组件共享来自其父组件的相同数据，则将状态移动到父组件，而不是在两个子组件中维护局部状态。
+
+6. **React Mixins 是什么？**
+   
+**答：** Mixins 是一种完全分离组件通用功能的方法。 Mixins 不应该被继续使用，可以用高阶组件或装饰器来替换。
+
+最常用的 mixins 是 PureRenderMixin。当 props 和状态与之前的 props 和状态相等时，你可能在某些组件中使用它来防止不必要的重新渲染：
+
+```jsx
+const PureRenderMixin = require("react-addons-pure-render-mixin");
+
+const Button = React.createClass({
+	mixins: [PureRenderMixin],
+	// ...
+});
+```
