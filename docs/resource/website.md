@@ -40,6 +40,8 @@ Here are some amazing websites that can always help you when you need them.
 
 -   [**editor.method**](https://editor.method.ac/) - A simple and easy vector editor for the web.
 
+-   [**freefrontend**](https://freefrontend.com/) - Free hand-picked HTML, CSS and JavaScript (jQuery, React, Vue) code examples, tutorials and articles.
+
 -   [**getwaves**](https://getwaves.io/) - Make some waves!
 
 -   [**gradient**](https://gradient.shapefactory.co/) - Find a beautiful gradient for your next project.
